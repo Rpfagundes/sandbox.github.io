@@ -567,7 +567,8 @@ footer {
 
 footer img {
 	height: 48px;
-	width: fit-content;
+	max-height: 48px;
+	width: auto;
 }
 
 footer ul {
