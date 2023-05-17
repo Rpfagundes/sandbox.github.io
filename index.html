@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>pkv-analyse-kostenlos.de</title>
+  <meta name="description" content="insert here the text you want to show on google result description">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Custom CSS -->
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body id="top">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <div class="d-flex flex-column gap-1">
+        <a class="brand" href="#top">pkv-analyse-kostenlos.de</a>
+      </div>
+        
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <input type="checkbox" id="menyAvPaa">
+        <label id="burger" for="menyAvPaa">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav align-items-center gap-5">
+          <li>
+            <a href="#info" data-toggle="collapse" data-target="#navbarSupportedContent">Über uns</a>
+          </li>
+
+          <li>
+            <a href="#info" data-toggle="collapse" data-target="#navbarSupportedContent">Kontakt</a>
+          </li>
+
+          <li>
+            <a href="#top" class="fill-btn anchor d-lg-none">Plan berechnen</a>
+          </li>
+        </ul>
+      </div>
+
+      <a href="#top" class="fill-btn anchor d-none d-lg-block">Plan berechnen</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-6 d-flex justify-content-center align-items-center calculate-bg">
+          <form id="calculate" action="">
+            <div id="step-header">
+              <h1 class="text-center mb-4">Private Krankenversicherung Vergleichen</h1>
+
+              <p class="subtitle text-center mb-4"><strong>Finden Sie die besten Tarife für 2023</strong></p>
+  
+              <div class="d-flex gap-2 align-items-center mb-4">
+                <div class="form-progress-div">
+                  <div class="form-progress"></div>
+                </div>
+              </div>
+            </div>
+  
+            <div id="steps">
+              <!-- Form Step 1 -->
+              <div class="form-step" id="formStep-1">
+                <h3 class="text-center mb-4">Wie ist Ihr derzeitiger Berufsstatus?</h3>
+    
+                <div class="d-flex flex-column gap-3 mb-2rem">
+                  <div class="d-flex flex-column flex-lg-row gap-3">
+                    <input type="radio" id="Angestellte" name="formStep-1" value="Angestellte">
+                    <label for="Angestellte" class="form-option">
+                      <p>
+                        <img src="img/1-Angestellte.svg">
+                        <strong>Angestellte</strong>
+                      </p>
+                    </label>
+    
+                    <input type="radio" id="Selbstständige-Freiberufler" name="formStep-1" value="Selbstständige-Freiberufler">
+                    <label for="Selbstständige-Freiberufler" class="form-option">
+                      <p>
+                        <img src="img/1-SelbststandigeFreiberufler.svg">
+                        <strong>Selbstständige / Freiberufler</strong>
+                      </p>
+                    </label> 
+
+                    <input type="radio" id="Beamte-Beamtenanwärter" name="formStep-1" value="Beamte-Beamtenanwärter">
+                    <label for="Beamte-Beamtenanwärter" class="form-option">
+                      <p>
+                        <img src="img/1-Beamte-Beamtenanwarter.svg">
+                        <strong>Beamte / Beamtenanwärter</strong>
+                      </p>
+                    </label>
+                  </div>
+  
+                  <div class="d-flex flex-column flex-lg-row gap-3">
+                    <input type="radio" id="Ärzte" name="formStep-1" value="Ärzte">
+                    <label for="Ärzte" class="form-option">
+                      <p>
+                        <img src="img/1-Arzte.svg">
+                        <strong>Ärzte</strong>
+                      </p>
+                    </label> 
+
+                    <input type="radio" id="Studenten-Schüler" name="formStep-1" value="Studenten-Schüler">
+                    <label for="Studenten-Schüler" class="form-option">
+                      <p>
+                        <img src="img/1-StudentenSchuler.svg">
+                        <strong>Studenten / Schüler</strong>
+                      </p>
+                    </label>
+    
+                    <input type="radio" id="Kinder" name="formStep-1" value="Kinder">
+                    <label for="Kinder" class="form-option">
+                      <p>
+                        <img src="img/1-Kinder.svg">
+                        <strong>Kinder</strong>
+                      </p>
+                    </label> 
+                  </div>
+
+                  <div class="d-flex flex-column flex-lg-row gap-3 ">
+                    <input type="radio" id="Rentner-Pensionäre" name="formStep-1" value="Rentner-Pensionäre">
+                    <label for="Rentner-Pensionäre" class="form-option">
+                      <p>
+                        <img src="img/1-RentnerPensionare.svg">
+                        <strong>Rentner / Pensionäre</strong>
+                      </p>
+                    </label>
+    
+                    <input type="radio" id="Hausfrauen-Hausmänner" name="formStep-1" value="Hausfrauen-Hausmänner">
+                    <label for="Hausfrauen-Hausmänner" class="form-option">
+                      <p>
+                        <img src="img/1-HausfrauenHausmanner.svg">
+                        <strong>Hausfrauen / Hausmänner</strong>
+                      </p>
+                    </label> 
+
+                    <input type="radio" id="Arbeitssuchende" name="formStep-1" value="Arbeitssuchende">
+                    <label for="Arbeitssuchende" class="form-option">
+                      <p>
+                        <img src="img/1-Arbeitssuchende.svg">
+                        <strong>Arbeitssuchende</strong>
+                      </p>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-end">
+                  <a class="fill-btn next-step disabled-btn" id="formStep-1-btn">Next<i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+
+              <!-- Form Step 2 -->
+              <div class="form-step d-none" id="formStep-2">
+                <h3 class="text-center mb-4">Welche Bausteine wünschen Sie?</h3>
+    
+                <div class="d-flex flex-column gap-3 mb-2rem">
+                  <div class="d-flex flex-column flex-lg-row gap-3">
+                    <input type="checkbox" id="Brille-&-Kontaktlinsen" name="formStep-2" value="Brille-&-Kontaktlinsen">
+                    <label for="Brille-&-Kontaktlinsen" class="form-option">
+                      <p>
+                        <img src="img/2-BrilleKontaktlinsen.svg">
+                        <strong>Brille & Kontaktlinsen</strong>
+                      </p>
+                    </label>
+    
+                    <input type="checkbox" id="Heilpraktiker-&-Akupunktur" name="formStep-2" value="Heilpraktiker-&-Akupunktur">
+                    <label for="Heilpraktiker-&-Akupunktur" class="form-option">
+                      <p>
+                        <img src="img/2-HeilpraktikerAkupunktur.svg">
+                        <strong>Heilpraktiker & Akupunktur</strong>
+                      </p>
+                    </label> 
+                  </div>
+  
+                  <div class="d-flex flex-column flex-lg-row gap-3">
+                    <input type="checkbox" id="Heil- & Hilfsmittel" name="formStep-2" value="Heil- & Hilfsmittel">
+                    <label for="Heil- & Hilfsmittel" class="form-option">
+                      <p>
+                        <img src="img/2-HeilHilfsmittel.svg">
+                        <strong>Heil- & Hilfsmittel</strong>
+                      </p>
+                    </label>
+    
+                    <input type="checkbox" id="Krankentagegeld" name="formStep-2" value="Krankentagegeld">
+                    <label for="Krankentagegeld" class="form-option">
+                      <p>
+                        <img src="img/2-Krankentagegeld.svg">
+                        <strong>Krankentagegeld</strong>
+                      </p>
+                    </label> 
+                  </div>
+
+                  <div class="d-flex flex-column flex-lg-row gap-3 ">
+                    <input type="checkbox" id="Auslandsschutz" name="formStep-2" value="Auslandsschutz">
+                    <label for="Auslandsschutz" class="form-option">
+                      <p>
+                        <img src="img/2-Auslandsschutz.svg">
+                        <strong>Auslandsschutz</strong>
+                      </p>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                  <a class="fill-btn last-step"><i class="fa-solid fa-chevron-left"></i>Back</a>
+                  <a class="fill-btn next-step" id="formStep-2-btn">Next<i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+  
+              <!-- Form Step 3 -->
+              <div class="form-step d-none" id="formStep-3">
+                <h3 class="text-center mb-4">Wie möchten Sie im Krankenhaus versorgt sein?</h3>
+    
+                <div class="d-flex flex-column gap-3 mb-2rem">
+                  <input type="checkbox" id="Einbettzimmer" name="formStep-3" value="Einbettzimmer">
+                  <label for="Einbettzimmer" class="form-option">
+                    <p>
+                      <img src="img/3-Einbettzimmer.svg">
+                      <strong>Einbettzimmer</strong>
+                    </p>
+                  </label>
+  
+                  <input type="checkbox" id="Zweibettzimmer" name="formStep-3" value="Zweibettzimmer">
+                  <label for="Zweibettzimmer" class="form-option">
+                    <p>
+                      <img src="img/3-Zweibettzimmer.svg">
+                      <strong>Zweibettzimmer</strong>
+                    </p>
+                  </label>
+            
+                  <input type="checkbox" id="Chefarztbehandlung" name="formStep-3" value="Chefarztbehandlung">
+                  <label for="Chefarztbehandlung" class="form-option">
+                    <p>
+                      <img src="img/3-Chefarztbehandlung.svg">
+                      <strong>Chefarztbehandlung</strong>
+                    </p>
+                  </label> 
+                </div>
+
+                <div class="d-flex justify-content-between">
+                  <a class="fill-btn last-step"><i class="fa-solid fa-chevron-left"></i>Back</a>
+                  <a class="fill-btn next-step" id="formStep-3-btn">Next<i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+
+              <!-- Form Step 4 -->
+              <div class="form-step d-none" id="formStep-4">
+                <h3 class="text-center mb-4">Wünschen Sie weitere Leistungen im Krankenhaus?</h3>
+    
+                <div class="d-flex flex-column gap-3 mb-2rem">
+                  <div class="d-flex flex-column flex-lg-row gap-3">
+                    <input type="checkbox" id="freie Krankenhauswahl" name="formStep-4" value="freie Krankenhauswahl">
+                    <label for="freie Krankenhauswahl" class="form-option">
+                      <p>
+                        <img src="img/4-freieKrankenhauswahl.svg">
+                        <strong>freie Krankenhauswahl</strong>
+                      </p>
+                    </label>
+    
+                    <input type="checkbox" id="Krankenhaustagegeld" name="formStep-4" value="Krankenhaustagegeld">
+                    <label for="Krankenhaustagegeld" class="form-option">
+                      <p>
+                        <img src="img/4-Krankenhaustagegeld.svg">
+                        <strong>Krankenhaustagegeld</strong>
+                      </p>
+                    </label> 
+                  </div>   
+                </div>
+
+                <div class="d-flex justify-content-between">
+                  <a class="fill-btn last-step"><i class="fa-solid fa-chevron-left"></i>Back</a>
+                  <a class="fill-btn next-step" id="formStep-4-btn">Next<i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+
+              <!-- Form Step 5 -->
+              <div class="form-step d-none" id="formStep-5">
+                <h3 class="text-center mb-4">Welche Leistungen wünschen Sie sich für Ihre Zähne?</h3>
+    
+                <div class="d-flex flex-column gap-3 mb-2rem">
+                  <input type="checkbox" id="Zahnersatz-&-Implantate" name="formStep-5" value="Zahnersatz-&-Implantate">
+                  <label for="Zahnersatz-&-Implantate" class="form-option">
+                    <p>
+                      <img src="img/5-ZahnersatzImplantate.svg">
+                      <strong>Zahnersatz & Implantate</strong>
+                    </p>
+                  </label>
+  
+                  <input type="checkbox" id="Professionelle-Zahnreinigung" name="formStep-5" value="Professionelle-Zahnreinigung">
+                  <label for="Professionelle-Zahnreinigung" class="form-option">
+                    <p>
+                      <img src="img/5-ProfessionelleZahnreinigung.svg">
+                      <strong>Professionelle Zahnreinigung</strong>
+                    </p>
+                  </label>
+            
+                  <input type="checkbox" id="Kieferorthopädie" name="formStep-5" value="Kieferorthopädie">
+                  <label for="Kieferorthopädie" class="form-option">
+                    <p>
+                      <img src="img/5-Kieferorthopadie.svg">
+                      <strong>Kieferorthopädie</strong>
+                    </p>
+                  </label> 
+                </div>
+
+                <div class="d-flex justify-content-between">
+                  <a class="fill-btn last-step"><i class="fa-solid fa-chevron-left"></i>Back</a>
+                  <a class="fill-btn next-step" id="formStep-5-btn">Next<i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+
+              <!-- Form Step 6 -->
+              <div class="form-step d-none" id="formStep-6">
+                <h3 class="text-center mb-4">Welche Prioritäten bevorzugen Sie?</h3>
+    
+                <div class="d-flex flex-column gap-3 mb-2rem">
+                  <input type="radio" id="optimale-Preis-Leistung" name="formStep-6" value="optimale-Preis-Leistung">
+                  <label for="optimale-Preis-Leistung" class="form-option">
+                    <p>
+                      <img src="img/6-optimalePreisLeistung.svg">
+                      <strong>optimale Preis-Leistung</strong>
+                    </p>
+                  </label>
+  
+                  <input type="radio" id="Testsieger-Finanztest" name="formStep-6" value="Testsieger-Finanztest">
+                  <label for="Testsieger-Finanztest" class="form-option">
+                    <p>
+                      <img src="img/6-TestsiegerFinanztest.svg">
+                      <strong>Testsieger Finanztest</strong>
+                    </p>
+                  </label>
+            
+                  <input type="radio" id="möglichst-günstig" name="formStep-6" value="möglichst-günstig">
+                  <label for="möglichst-günstig" class="form-option">
+                    <p>
+                      <img src="img/6-möglichstGünstig.svg">
+                      <strong>möglichst günstig</strong>
+                    </p>
+                  </label> 
+                </div>
+
+                <div class="d-flex justify-content-between">
+                  <a class="fill-btn last-step"><i class="fa-solid fa-chevron-left"></i>Back</a>
+                  <a class="fill-btn next-step" id="formStep-6-btn">Next<i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+
+              <!-- Form Step 7 -->
+              <div class="form-step d-none" id="formStep-7">
+                <h3 class="mb-4">Ihr Geburtsdatum</h3>
+    
+                <input class="formStep-text-input mb-2rem" type="date" />
+
+                <div class="d-flex justify-content-between">
+                  <a class="fill-btn last-step"><i class="fa-solid fa-chevron-left"></i>Back</a>
+                  <a class="fill-btn next-step disabled-btn" id="formStep-7-btn">Next<i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+
+              <!-- Form Step 8 -->
+              <div class="form-step d-none" id="formStep-8">
+                <h3 class="mb-4">In welcher Region wohnen Sie?</h3>
+    
+                <input class="formStep-text-input mb-2rem" id="only-numb" type="text" maxlength="5" />
+               
+                <div class="d-flex justify-content-between">
+                  <a class="fill-btn last-step"><i class="fa-solid fa-chevron-left"></i>Back</a>
+                  <a class="fill-btn final-answer disabled-btn" id="formStep-8-btn">Next<i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+  
+              <!-- Searching -->
+              <div class="form-step text-center d-none" id="formStep-searching">
+                <img src="img/loading.gif">
+              </div>
+  
+              <!-- Result -->
+              <div class="form-step d-none" id="formStep-result">
+                <h3 class="mb-4">Bitte geben Sie unten Ihre Kontaktdaten ein, damit wir Ihren Versicherungsprozess fortsetzen können:</h3>
+  
+                <div class="d-flex flex-column gap-3">
+                  <input class="formStep-text-input" type="text" placeholder="Vollständiger Name" required/>
+                  <input class="formStep-text-input" type="email" placeholder="E-Mail Adresse" required/>
+                  <input class="formStep-text-input mb-2" type="tel" placeholder="Telefonnummer" required/>              
+  
+                  <div class="d-flex flex-column align-items-end gap-4">
+                    <p>Indem Sie anfordern, die Informationen zu erhalten, stimmen Sie unseren <a href="#" target="_blank">Datenschutzrichtlinien</a> zu</p>
+  
+                    <button type="submit" class="fill-btn disabled-btn" id="formStep-result-btn">Informationen erhalten!</button>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Congratulation -->
+              <div class="form-step text-center d-none" id="formStep-congratulation">
+                <i class="fa-solid fa-circle-check w-100 mb-4"></i>
+  
+                <h3 class="mb-3">Super! Wir haben Ihre Anfrage erhalten!</h3>
+                <p>Sie erhalten das Budget in Kürze in der angegebenen E-Mail</p>
+              </div>
+            </div>
+            
+            <div id="checklist">
+              <div class="d-flex flex-column gap-3">
+                <div class="d-flex gap-2">
+                  <img src="img/check.svg">
+                  <p><strong>Preis berechnen</strong></p>
+                </div>
+        
+                <div class="d-flex gap-2">
+                  <img src="img/check.svg">
+                  <p><strong>Supergünstig</strong></p>
+                </div>
+              </div>
+              
+              <div class="d-flex flex-column gap-3">
+                <div class="d-flex gap-2">
+                  <img src="img/check.svg">
+                  <p><strong>Top Tarifqualität</strong></p>
+                </div>
+        
+                <div class="d-flex gap-2">
+                  <img src="img/check.svg">
+                  <p><strong>Umfangreiche Leistungen</strong></p>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Partners -->
+  <section class="partners">
+    <div class="container">
+      <div class="row">
+        <div class="partners-grid">
+          <img src="img/partner-1-img.webp" alt="">
+          <img src="img/partner-2-img.webp" alt="">
+          <img src="img/partner-3-img.webp" alt="">
+          <img src="img/partner-4-img.webp" alt="">
+          <img src="img/partner-5-img.webp" alt="">
+          <img src="img/partner-6-img.webp" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Informations -->
+  <section class="container informations" id="info">
+    <div class="row flex-column-reverse flex-lg-row">
+      <div class="col-lg-7">
+        <h2 class="mb-3">Private Krankenversicherung (PKV) - pkv-analyse-kostenlos.de findet für Sie den besten Tarif</h2>
+        <p class="mb-5">Die private Krankenversicherung (PKV) ist eine wichtige Alternative zur gesetzlichen Krankenversicherung (GKV) in Deutschland. Bei pkv-analyse-kostenlos.de sind wir als unabhängige Versicherungsmakler bestrebt, Ihnen dabei zu helfen, den besten PKV-Tarif für Ihre individuellen Bedürfnisse zu finden. In diesem Artikel erfahren Sie alles Wissenswerte über die PKV und wie pkv-analyse-kostenlos.de Ihnen bei der Auswahl des richtigen Tarifs hilft.</p>
+      
+        <h3 class="mb-3">Was ist eine private Krankenversicherung (PKV)?</h3>
+        <p class="mb-5">Die private Krankenversicherung ist eine Form der Krankenversicherung, die von privaten Versicherungsunternehmen angeboten wird. Im Gegensatz zur GKV, die auf Solidarität basiert und bei der die Beiträge vom Einkommen abhängen, richten sich die Beiträge der PKV nach dem individuellen Risiko und den gewählten Leistungen. Die PKV bietet in der Regel umfangreichere Leistungen als die GKV, was sich in schnelleren Arztterminen, besseren Unterkünften im Krankenhaus und höheren Erstattungen für Zahnbehandlungen widerspiegelt.</p>
+      
+      
+        <h3 class="mb-3">Warum pkv-analyse-kostenlos.de für die Auswahl Ihrer PKV?</h3>
+        <p class="mb-5">Als unabhängige Versicherungsmakler bei pkv-analyse-kostenlos.de arbeiten wir mit über 180 Versicherern zusammen, um Ihnen den besten und günstigsten Tarif für Ihre individuellen Bedürfnisse zu finden. Wir bieten Ihnen eine umfassende Tarifanalyse und einen transparenten Vergleich, der Ihnen die Entscheidungsfindung erleichtert.</p>
+      
+        <h3 class="mb-3">Wer kann sich privat versichern?</h3>
+        <p class="mb-5">Die private Krankenversicherung richtet sich vor allem an Selbstständige, Freiberufler, Beamte und gutverdienende Angestellte. Arbeitnehmer können sich privat versichern, wenn ihr Bruttojahreseinkommen über der Versicherungspflichtgrenze (2021: 64.350 Euro) liegt.</p>
+      
+        <h3 class="mb-3">Vorteile der privaten Krankenversicherung</h3>
+        <p>Individuelle Tarife und Leistungen: Die PKV bietet eine Vielzahl von Tarifen und Leistungspaketen, die auf die individuellen Bedürfnisse des Versicherten zugeschnitten sind. Dies ermöglicht eine umfassendere Absicherung als die GKV.</p>
+        <ul class="mb-5">
+          <li><strong>Schnellere Arzttermine: </strong>Privatversicherte haben oft Zugang zu schnelleren Arztterminen, da Ärzte für Privatpatienten in der Regel höhere Gebührensätze abrechnen können.</li>
+          <li><strong>Bessere Unterkunft im Krankenhaus</strong>: Privatversicherte haben Anspruch auf eine bessere Unterbringung im Krankenhaus, wie Ein- oder Zweibettzimmer und Chefarztbehandlung.</li>
+          <li><strong>Höhere Zahnbehandlungserstattung:</strong> Die PKV erstattet in der Regel höhere Kosten für Zahnbehandlungen als die GKV, einschließlich Zahnersatz und Kieferorthopädie.</li>
+        </ul>
+
+        <h3 class="mb-3">Nachteile der privaten Krankenversicherung</h3>
+        <ul class="mb-5">
+          <li><strong>Höhere Beiträge: </strong>Die Beiträge der PKV können im Vergleich zur GKV höher sein, vor allem für ältere Versicherte oder solche mit Vorerkrankungen</li>
+          <li><strong>Keine Familienversicherung: </strong>Im Gegensatz zur GKV gibt es in der PKV keine kostenfreie Familienversicherung. Jedes Familienmitglied muss einen eigenen Vertrag abschließen.</li>
+          <li>Wie pkv-analyse-kostenlos.de Ihnen bei der Auswahl der richtigen PKV hilft</li>
+          <li><strong>Umfassender Tarifvergleich: </strong>Bei pkv-analyse-kostenlos.de vergleichen wir die Tarife von über 180 Versicherungsunternehmen, um Ihnen einen umfassenden Überblick über die verfügbaren Optionen zu geben und den besten Tarif für Ihre Bedürfnisse zu finden.</li>
+          <li><strong>Individuelle Beratung: </strong>Unsere erfahrenen Versicherungsmakler nehmen sich Zeit, um Ihre individuellen Bedürfnisse und Anforderungen zu verstehen. Wir bieten Ihnen maßgeschneiderte Empfehlungen, die auf Ihrer persönlichen Situation und Ihren Wünschen basieren.</li>
+          <li><strong>Unterstützung bei der Antragstellung: </strong>Wir helfen Ihnen bei der Antragstellung und stellen sicher, dass alle erforderlichen Dokumente und Informationen eingereicht werden, um den Prozess so reibungslos wie möglich zu gestalten.</li>
+          <li><strong>Langfristige Betreuung: </strong>Nach dem Abschluss Ihrer privaten Krankenversicherung stehen wir Ihnen weiterhin als Ansprechpartner zur Verfügung. Wir unterstützen Sie bei Fragen oder Problemen und informieren Sie über relevante Änderungen in der Versicherungsbranche.</li>
+        </ul>
+
+      <h3 class="mb-3">Tipps zur Auswahl der richtigen PKV mit pkv-analyse-kostenlos.de</h3>
+      <ul class="mb-5">
+        <li><strong>Vergleichen Sie Angebote:</strong> Nutzen Sie unseren umfassenden Tarifvergleich, um verschiedene Angebote und Leistungspakete miteinander zu vergleichen.</li>
+        <li><strong>Achten Sie auf versteckte Kosten: </strong>Manche Tarife enthalten versteckte Kosten oder Ausschlüsse, die den tatsächlichen Versicherungsschutz einschränken können. Unsere Versicherungsmakler helfen Ihnen dabei, solche Fallstricke zu vermeiden.</li>
+        <li><strong>Berücksichtigen Sie Ihren Gesundheitszustand: </strong>Bevor Sie sich für einen Tarif entscheiden, sollten Sie Ihren aktuellen Gesundheitszustand und mögliche Vorerkrankungen berücksichtigen. Einige Versicherer bieten spezielle Tarife für Personen mit bestimmten Erkrankungen oder Bedürfnissen an.</li>
+        <li><strong>Überprüfen Sie die Vertragslaufzeit: </strong>Achten Sie bei der Auswahl eines Tarifs auf die Vertragslaufzeit und mögliche Kündigungsfristen. Es ist wichtig, einen Tarif zu wählen, der Ihnen Flexibilität und Anpassungsfähigkeit an Ihre sich ändernden Lebensumstände bietet.</li>
+      </ul>
+      
+      <h3 class="mb-3">Fazit:</h3>
+      <p>Die private Krankenversicherung bietet viele Vorteile, aber die Auswahl des richtigen Tarifs kann eine Herausforderung sein. Bei pkv-analyse-kostenlos.de sind wir als unabhängige Versicherungsmakler bestrebt, Ihnen dabei zu helfen, den besten PKV-Tarif für Ihre individuellen Bedürfnisse zu finden. Nutzen Sie unsere umfassende Tarifanalyse, individuelle Beratung und langfristige Betreuung, um sicherzustellen, dass Sie bestmöglich abgesichert sind.</p>
+      </div>
+
+      <div class="col-lg-4 offset-lg-1 mb-5 mb-lg-0">
+        <div class="reasons mb-5">
+          <h2 class="mb-2rem">Reasons to choose us</h2>
+
+          <div class="d-flex gap-3 mb-4">
+            <img src="img/check.svg">
+
+            <div>
+              <p class="subtitle mb-2"><strong>Superschnell Preis berechnen</strong></p>
+              <p>Berechne Online den Preis deiner gewünschten Versicherung</p>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3 mb-4">
+            <img src="img/check.svg">
+
+            <div>
+              <p class="subtitle mb-2"><strong>Direkt versichert</strong></p>
+              <p>In 2 Minuten direkt online versichern</p>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3 mb-4">
+            <img src="img/check.svg">
+
+            <div>
+              <p class="subtitle mb-2"><strong>Supergünstige Tarife</strong></p>
+              <p>Wir suchen Dir die günstigsten Tarife</p>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3">
+            <img src="img/check.svg">
+
+            <div>
+              <p class="subtitle mb-2"><strong>Vergleich von 180 Versicherungen</strong></p>
+              <p>Wir vergleichen über 180 Versicherungen für dich</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact">
+          <h2>Kontaktieren Sie uns</h2>
+
+          <a href="#" class="d-flex gap-3">
+            <img src="img/whatsapp-icon.svg">
+
+            <div>
+              <p class="subtitle mb-2">Whatsapp</p>
+              <p class="subtitle"><strong>1234 123 123-4</strong></p>
+            </div>
+          </a>
+
+          <a href="#" class="d-flex gap-3">
+            <img src="img/chat-icon.svg">
+
+            <div>
+              <p class="subtitle mb-2">Chat</p>
+              <p class="subtitle"><strong>Click here to chat</strong></p>
+            </div>
+          </a>
+
+          <a href="#" class="d-flex gap-3">
+            <img src="img/call-icon.svg">
+
+            <div>
+              <p class="subtitle mb-2">Rufen Sie uns an</p>
+              <p class="subtitle"><strong>1234 123 123-4</strong></p>
+            </div>
+          </a>
+
+          <a href="#" class="d-flex gap-3">
+            <img src="img/email-icon.svg">
+
+            <div>
+              <p class="subtitle mb-2">E-mail</p>
+              <p class="subtitle"><strong>email@example.com</strong></p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="container">
+    <div class="row mb-5">
+      <h2 class="text-center">See what other customers think about us</h2>
+    </div>
+
+    <div class="row">
+      <div class="reviews-grid">
+        <div class="review">
+          <h2 class="mb-2">Einfach und Unkompliziert Verträge…</h2>
+          <p class="subtitle mb-3">Einfach und Unkompliziert Verträge kündigen, ist mit Smartkündigen.de in Minuten erledigt</p>
+  
+          <div class="d-flex justify-content-between gap-4">
+            <p class="subtitle"><strong>Jürgen M.</strong></p>
+            <img src="img/5-star-img.webp" alt="5 star review">
+          </div>
+        </div>
+  
+        <div class="review">
+          <h2 class="mb-2">Schnell, einfach, kostenlos! Vielen Dank</h2>
+          <p class="subtitle mb-3">Kündigung ging schnell und sehr einfach. Hoffe, dass sie nun vom Anbieter auch akzeptiert wird.</p>
+  
+          <div class="d-flex justify-content-between gap-4">
+            <p class="subtitle"><strong>Manuel Rosskopf</strong></p>
+            <img src="img/5-star-img.webp" alt="5 star review">
+          </div>
+        </div>
+  
+        <div class="review">
+          <h2 class="mb-2">Gute und schnelle Bearbeitung</h2>
+          
+          <p class="subtitle mb-3">Das ging alles schnell und unkompliziert über die Bühne ohne Wartezeit</p>
+  
+          <div class="d-flex justify-content-between gap-4">
+            <p class="subtitle"><strong>Thorsten Diderich</strong></p>
+            <img src="img/5-star-img.webp" alt="5 star review">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3 d-flex flex-column align-items-center text-center">
+          <h2 class="mb-2rem">Jetzt in die PKV wechseln</h2>
+    
+          <a href="#top" class="fill-btn anchor">Plan berechnen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-auto mb-5 mb-xl-0">
+          <a class="brand d-block mb-2rem" href="#">pkv-analyse-kostenlos.de</a>
+
+          <div class="d-flex flex-column flex-md-row gap-2rem">
+            <div class="d-flex flex-column gap-2rem gap-md-3">
+              <a href="#" class="d-flex align-items-start gap-3">
+                <img src="img/whatsapp-white-icon.svg">
+    
+                <div>
+                  <p class="subtitle mb-2">Whatsapp</p>
+                  <p class="subtitle"><strong>1234 123 123-4</strong></p>
+                </div>
+              </a>
+    
+              <a href="#" class="d-flex align-items-start gap-3">
+                <img src="img/chat-white-icon.svg">
+    
+                <div>
+                  <p class="subtitle mb-2">Chat</p>
+                  <p class="subtitle"><strong>Click here to chat</strong></p>
+                </div>
+              </a>
+            </div>
+
+            <div class="d-flex flex-column gap-2rem gap-md-3">
+              <a href="#" class="d-flex align-items-start gap-3">
+                <img src="img/call-white-icon.svg">
+    
+                <div>
+                  <p class="subtitle mb-2">Rufen Sie uns an</p>
+                  <p class="subtitle"><strong>1234 123 123-4</strong></p>
+                </div>
+              </a>
+    
+              <a href="#" class="d-flex align-items-start gap-3">
+                <img src="img/email-white-icon.svg">
+    
+                <div>
+                  <p class="subtitle mb-2">E-mail</p>
+                  <p class="subtitle"><strong>email@example.com</strong></p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 d-flex flex-column flex-lg-row justify-content-lg-end gap-5">   
+          <div>
+            <h3>Andere Links</h3>
+
+            <ul class="nav flex-column">
+              <li>
+                <a href="#info">Über uns</a>
+              </li>
+  
+              <li>
+                <a href="#info">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Folgen Sie uns</h3>
+
+            <div class="nav d-flex gap-4">
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+  
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+  
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/navbar-effects.js"></script>
+  <script src="js/simulate.js"></script>
+
+</body>
+
+</html>
