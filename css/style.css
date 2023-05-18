@@ -465,7 +465,10 @@ footer a:hover .fa-brands {
 	/* Navbar */
 	.navbar-collapse .navbar-nav {
 		height: 100vh;
-		padding-top: calc(50vh - 189px);
+	}
+
+	.navbar-nav{
+		padding-bottom: 5rem;
 	}
 
 	.dropdown, .dropdown-menu li{
