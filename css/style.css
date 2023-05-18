@@ -453,9 +453,17 @@ footer a:hover .fa-brands {
 @media (max-width: 991.98px) {
 
 	/* Navbar */
-	.navbar-collapse ul {
+	.navbar-collapse .navbar-nav {
 		height: 100vh;
-		padding-top: calc(50vh - 309px);
+		padding-top: calc(50vh - 189px);
+	}
+
+	.dropdown-menu{
+		box-shadow: none;
+	}
+
+	.dropdown, .dropdown-menu li{
+		text-align: center;
 	}
 
 	nav a{
