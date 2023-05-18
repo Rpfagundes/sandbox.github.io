@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Capitol Inkasso - Suchen Sie einen Inkasso-Partner?</title>
+  <meta name="description" content="insert here the text you want to show on google result description">
+  <link rel="icon" href="img/favicon.svg">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/other-styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <div class="d-flex flex-column gap-1">
+        <a href="/">
+          <img src="img/logo.svg" alt="Capitol Inkasso" class="brand">
+        </a>
+      </div>
+        
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <input type="checkbox" id="menyAvPaa">
+        <label id="burger" for="menyAvPaa">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav align-items-center gap-2rem">
+          <li class="dropdown d-none d-lg-block">
+            <a class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dienstleistungen <i class="fa-solid fa-chevron-down"></i></a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="service.html" data-toggle="collapse" data-target="#navbarSupportedContent">Bonitätsauskünfte</a></li>
+              <li><a class="dropdown-item" href="service.html" data-toggle="collapse" data-target="#navbarSupportedContent">Außergerichtliches Mahnverfahren</a></li>
+              <li><a class="dropdown-item" href="service.html" data-toggle="collapse" data-target="#navbarSupportedContent">Gerichtliches Mahnverfahren</a></li>
+              <li><a class="dropdown-item" href="service.html" data-toggle="collapse" data-target="#navbarSupportedContent">Forderungsüberwachung</a></li>
+              <li><a class="dropdown-item" href="service.html" data-toggle="collapse" data-target="#navbarSupportedContent">Auslandsinkasso</a></li>
+            </ul>
+          </li>
+
+          <li class="d-block d-lg-none">
+            <a href="service.html" data-toggle="collapse" data-target="#navbarSupportedContent">Bonitätsauskünfte</a>
+          </li>
+          
+          <li class="d-block d-lg-none">
+            <a href="service.html" data-toggle="collapse" data-target="#navbarSupportedContent">Außergerichtliches Mahnverfahren</a>
+          </li>
+          
+          <li class="d-block d-lg-none">
+            <a href="service.html" data-toggle="collapse" data-target="#navbarSupportedContent">Gerichtliches Mahnverfahren</a>
+          </li>
+
+          <li class="d-block d-lg-none">
+            <a href="service.html" data-toggle="collapse" data-target="#navbarSupportedContent">Forderungsüberwachung</a>
+          </li>
+
+          <li class="d-block d-lg-none">
+            <a href="service.html" data-toggle="collapse" data-target="#navbarSupportedContent">Auslandsinkasso</a>
+          </li>
+
+          <li>
+            <a href="about-us.html" data-toggle="collapse" data-target="#navbarSupportedContent">Über uns</a>
+          </li>
+
+          <li>
+            <a href="references.html" data-toggle="collapse" data-target="#navbarSupportedContent">Verweise</a>
+          </li>
+
+          <li>
+            <a href="contact.html" data-toggle="collapse" data-target="#navbarSupportedContent">kontaktiere uns</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <img src="img/searching-header-img.webp" class="header-img-bg">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center mb-5 mb-lg-0">
+          <h1 class="mb-3">Bonitätsauskünfte</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis sem nec elit dignissim, aliquam dignissim lectus tincidunt</p>
+        </div>
+
+        <div class="col-lg-6 col-xl-5 offset-xl-1">
+          <form id="calculate" action="">
+            <div id="step-header">
+              <h2 class="mb-4">Calculate your insurance</h2>
+            </div>
+  
+            <div id="steps">
+              <!-- Form Step 1 -->
+              <div class="form-step mb-4" id="formStep-1">
+                <h3 class="mb-4">Was trifft am besten auf Sie zu?</h3>
+    
+                <div class="d-flex flex-column gap-3">
+                  <input type="radio" id="Unternehmen" name="formStep-1" value="Unternehmen">
+                  <label for="Unternehmen" class="form-option next-step">
+                    <p>
+                      <img src="img/1-Unternehmen.svg">
+                      <strong>Unternehmen</strong>
+                    </p>
+                  </label>
+  
+                  <input type="radio" id="FreiberufleroderKleingewerbe" name="formStep-1" value="Freiberufler oder Kleingewerbe">
+                  <label for="FreiberufleroderKleingewerbe" class="form-option next-step">
+                    <p>
+                      <img src="img/1-FreiberufleroderKleingewerbe.svg">
+                      <strong>Freiberufler oder Kleingewerbe</strong>
+                    </p>
+                  </label> 
+  
+                  <input type="radio" id="Privatperson" name="formStep-1" value="Privatperson">
+                  <label for="Privatperson" class="form-option next-step">
+                    <p>
+                      <img src="img/1-Privatperson.svg">
+                      <strong>Privatperson</strong>
+                    </p>
+                  </label>
+                </div>
+              </div>
+  
+              <!-- Form Step 2 -->
+              <div class="form-step d-none mb-4" id="formStep-2">
+                <div class="d-flex align-items-center gap-2 mb-4">
+                  <a class="last-step d-none">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </a>
+
+                  <h3>Wie viele Inkasso-Forderungen fallen bei Ihnen typischerweise pro Jahr an?</h3>
+                </div>
+    
+                <div class="d-flex flex-column flex-lg-row gap-3 mb-3">
+                  <input type="radio" id="Einzelforderung" name="formStep-2" value="Einzelforderung">
+                  <label for="Einzelforderung" class="form-option next-step">
+                    <p>
+                      <img src="img/2-Einzelforderung.svg">
+                      <strong>Einzelforderung</strong>
+                    </p>
+                  </label>
+  
+                  <input type="radio" id="Biszu10FalleproJahr" name="formStep-2" value="Bis zu 10 Fälle">
+                  <label for="Biszu10FalleproJahr" class="form-option next-step">
+                    <p>
+                      <img src="img/2-Biszu10FalleproJahr.svg">
+                      <strong>Bis zu 10 Fälle</strong>
+                    </p>
+                  </label>
+                </div>
+
+                <div class="d-flex flex-column flex-lg-row gap-3 mb-3">
+                  <input type="radio" id="Single" name="formStep-2" value="Single">
+                  <label for="Single" class="form-option next-step">
+                    <p>
+                      <img src="img/2-10-50FalleproJahr.svg">
+                      <strong>10-50 Fälle</strong>
+                    </p>
+                  </label>
+                
+                  <input type="radio" id="Single" name="formStep-2" value="Single">
+                  <label for="Single" class="form-option next-step">
+                    <p>
+                      <img src="img/2-50-250FalleproJahr.svg">
+                      <strong>50-250 Fälle</strong>
+                    </p>
+                  </label>
+                </div>
+
+                <div class="d-flex flex-column flex-lg-row gap-3">
+                  <input type="radio" id="Single" name="formStep-2" value="Über 250 Fälle">
+                  <label for="Single" class="form-option next-step">
+                    <p>
+                      <img src="img/2-uber250FalleproJahr.svg">
+                      <strong>Über 250 Fälle</strong>
+                    </p>
+                  </label>
+                </div>
+              </div>
+  
+              <!-- Form Step 3 -->
+              <div class="form-step d-none mb-4" id="formStep-3">
+                <div class="d-flex align-items-center gap-2 mb-4">
+                  <a class="last-step d-none">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </a>
+
+                  <h3>Wurde die Forderung bereits tituliert?</h3>
+                </div>
+    
+                <div class="d-flex flex-column flex-lg-row gap-3 mb-3">
+                  <input type="radio" id="Einzelforderung" name="formStep-3" value="Einzelforderung">
+                  <label for="Einzelforderung" class="form-option next-step">
+                    <p>
+                      <img src="img/3-ja.svg">
+                      <strong>Ja</strong>
+                    </p>
+                  </label>
+  
+                  <input type="radio" id="Biszu10FalleproJahr" name="formStep-3" value="Bis zu 10 Fälle">
+                  <label for="Biszu10FalleproJahr" class="form-option next-step">
+                    <p>
+                      <img src="img/3-nein.svg">
+                      <strong>Nein</strong>
+                    </p>
+                  </label>
+                </div>
+              </div>    
+              
+              <!-- Form Step 4 -->
+              <div class="form-step d-none mb-4" id="formStep-4">
+                <div class="d-flex align-items-center gap-2 mb-4">
+                  <a class="last-step d-none">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </a>
+
+                  <h3>Gegen wen richten sich Ihre Forderungen?</h3>
+                </div>
+    
+                <div class="d-flex flex-column flex-lg-row gap-3 mb-3">
+                  <input type="radio" id="Einzelforderung" name="formStep-4" value="Einzelforderung">
+                  <label for="Einzelforderung" class="form-option next-step">
+                    <p>
+                      <img src="img/1-Unternehmen.svg">
+                      <strong>Unternehmen (B2B)</strong>
+                    </p>
+                  </label>
+  
+                  <input type="radio" id="Biszu10FalleproJahr" name="formStep-4" value="Bis zu 10 Fälle">
+                  <label for="Biszu10FalleproJahr" class="form-option next-step">
+                    <p>
+                      <img src="img/5-PrivatpersonB2C.svg">
+                      <strong>Privatperson (B2C)</strong>
+                    </p>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Form Step 5 -->
+              <div class="form-step d-none mb-4" id="formStep-5">
+                <div class="d-flex align-items-center gap-2 mb-4">
+                  <a class="last-step d-none">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </a>
+
+                  <h3>Wie hoch ist das typische Volumen pro Forderung?</h3>
+                </div>
+    
+                <div class="d-flex flex-column flex-lg-row gap-3 mb-3">
+                  <input type="radio" id="Einzelforderung" name="formStep-5" value="Einzelforderung">
+                  <label for="Einzelforderung" class="form-option next-step">
+                    <p>
+                      <img src="img/6-Unter-500.svg">
+                      <strong>Unter €500</strong>
+                    </p>
+                  </label>
+  
+                  <input type="radio" id="Biszu10FalleproJahr" name="formStep-5" value="Bis zu 10 Fälle">
+                  <label for="Biszu10FalleproJahr" class="form-option next-step">
+                    <p>
+                      <img src="img/6-Zwischen-500-und-2000.svg">
+                      <strong>Zwischen €500 und €2.000</strong>
+                    </p>
+                  </label>
+                </div>
+
+                <div class="d-flex flex-column flex-lg-row gap-3 mb-3">
+                  <input type="radio" id="Einzelforderung" name="formStep-5" value="Einzelforderung">
+                  <label for="Einzelforderung" class="form-option next-step">
+                    <p>
+                      <img src="img/6-uber2000.svg">
+                      <strong>Über €2.000</strong>
+                    </p>
+                  </label>
+  
+                  <input type="radio" id="Biszu10FalleproJahr" name="formStep-5" value="Bis zu 10 Fälle">
+                  <label for="Biszu10FalleproJahr" class="form-option next-step">
+                    <p>
+                      <img src="img/6-weibnicht.svg">
+                      <strong>Weiß nicht</strong>
+                    </p>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Form Step 6 -->
+              <div class="form-step d-none mb-4" id="formStep-6">
+                <div class="d-flex align-items-center gap-2 mb-4">
+                  <a class="last-step d-none">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </a>
+
+                  <h3>Wo ist der Schuldner ansässig?</h3>
+                </div>
+    
+                <div class="d-flex flex-column flex-lg-row gap-3 mb-3">
+                  <input type="radio" id="Einzelforderung" name="formStep-6" value="Einzelforderung">
+                  <label for="Einzelforderung" class="form-option next-step">
+                    <p>
+                      <img src="img/7-Deutschland.svg">
+                      <strong>Deutschland</strong>
+                    </p>
+                  </label>
+  
+                  <input type="radio" id="Biszu10FalleproJahr" name="formStep-6" value="Bis zu 10 Fälle">
+                  <label for="Biszu10FalleproJahr" class="form-option next-step">
+                    <p>
+                      <img src="img/7-AuslandEU.svg">
+                      <strong>Ausland (EU)</strong>
+                    </p>
+                  </label>
+                </div>
+
+                <div class="d-flex flex-column flex-lg-row gap-3 mb-3">
+                  <input type="radio" id="Einzelforderung" name="formStep-6" value="Einzelforderung">
+                  <label for="Einzelforderung" class="form-option next-step">
+                    <p>
+                      <img src="img/7-AuslandnichtEU.svg">
+                      <strong>Ausland (nicht EU)</strong>
+                    </p>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Form Step 7 -->
+              <div class="form-step d-none mb-4" id="formStep-7">
+                <div class="d-flex align-items-center gap-2 mb-4">
+                  <a class="last-step d-none">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </a>
+
+                  <h3>Kommen Sie auf Empfehlung zu uns?</h3>
+                </div>
+    
+                <div class="d-flex flex-column flex-lg-row gap-3 mb-3">
+                  <input type="radio" id="Einzelforderung" name="formStep-7" value="Einzelforderung">
+                  <label for="Einzelforderung" class="form-option final-answer">
+                    <p>
+                      <img src="img/3-ja.svg">
+                      <strong>Ja</strong>
+                    </p>
+                  </label>
+  
+                  <input type="radio" id="Biszu10FalleproJahr" name="formStep-7" value="Bis zu 10 Fälle">
+                  <label for="Biszu10FalleproJahr" class="form-option final-answer">
+                    <p>
+                      <img src="img/3-nein.svg">
+                      <strong>Nein</strong>
+                    </p>
+                  </label>
+                </div>
+              </div>
+  
+              <!-- Result -->
+              <div class="form-step d-none" id="formStep-result">                
+                <h3 class="mb-4">Bitte geben Sie unten Ihre Kontaktdaten ein, damit wir mit Ihrem Vorgang fortfahren können:</h3>
+  
+                <div class="d-flex flex-column gap-3">
+                  <input class="formStep-text-input" type="text" placeholder="Vollständiger Name" required/>
+                  <input class="formStep-text-input" type="text" placeholder="Firma" required/>
+                  <input class="formStep-text-input" type="text" placeholder="Postleitzahl" required/>
+                  <input class="formStep-text-input" type="email" placeholder="E-Mail Adresse" required/>
+                  <input class="formStep-text-input mb-2" type="tel" placeholder="Telefonnummer" required/>
+  
+                  <div class="d-flex flex-column align-items-end gap-4">
+                    <p>Indem Sie anfordern, die Informationen zu erhalten, stimmen Sie unseren <a href="" target="_blank">Datenschutzrichtlinien</a> zu</p>
+  
+                    <button type="submit" class="fill-btn disabled-btn" id="formStep-result-btn">Informationen erhalten!</button>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Congratulation -->
+              <div class="form-step text-center d-none" id="formStep-congratulation">
+                <i class="fa-solid fa-circle-check w-100 mb-4" style="color: #198754; font-size: 88px;"></i>
+  
+                <h3 class="mb-3">Super! Wir haben Ihre Anfrage erhalten!</h3>
+                <p>Sie erhalten das Budget in Kürze in der angegebenen E-Mail</p>
+              </div>
+            </div>
+
+            <div class="d-flex gap-2 justify-content-center" id="form-progress">
+              <div class="form-progress-div">
+                <div class="form-progress"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Why be our partner -->
+  <section class="bg-soft">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 align-self-center mb-5 mb-lg-0">
+          <h2 class="mb-3">Warum sollten Sie unser Partner werden?</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis sem nec elit dignissim</p>
+        </div>
+  
+        <div class="col-lg-6 offset-lg-1 d-flex flex-column gap-2rem">
+          <div class="d-flex flex-column flex-sm-row gap-2rem">
+            <div class="why-card d-flex align-items-start gap-3">
+              <img src="img/experience.svg">
+            
+              <div>
+                <h3 class="mb-2">Erfahrung</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+  
+            <div class="why-card d-flex align-items-start gap-3">
+              <img src="img/commitment.svg">
+            
+              <div>
+                <h3 class="mb-2">Engagement</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="d-flex flex-column flex-sm-row gap-2rem">
+            <div class="why-card d-flex align-items-start gap-3">
+              <img src="img/fairness.svg">
+            
+              <div>
+                <h3 class="mb-2">Gerechtigkeit</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+  
+            <div class="why-card d-flex align-items-start gap-3">
+              <img src="img/efficiency.svg">
+            
+              <div>
+                <h3 class="mb-2">Effizienz</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Informartion -->
+  <section class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <h2 class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt odio at arcu sodales, a tincidunt neque elementum. Phasellus scelerisque ex odio, vel bibendum tellus ultricies et. Nam pulvinar ornare porta. Maecenas a bibendum neque, eget posuere dui. Vestibulum ut feugiat lectus. Nunc feugiat diam nulla, sagittis maximus tellus aliquam eget. Etiam lacus velit, maximus id odio in, luctus tristique nunc. Fusce quis malesuada sem. Integer iaculis iaculis libero id fermentum.</p>
+  
+        <h3 class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt odio at arcu sodales, a tincidunt neque elementum. Phasellus scelerisque ex odio, vel bibendum tellus ultricies et. Nam pulvinar ornare porta. Maecenas a bibendum neque, eget posuere dui. Vestibulum ut feugiat lectus. Nunc feugiat diam nulla, sagittis maximus tellus aliquam eget. Etiam lacus velit, maximus id odio in, luctus tristique nunc. Fusce quis malesuada sem. Integer iaculis iaculis libero id fermentum.</p>
+      
+        <h3 class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt odio at arcu sodales, a tincidunt neque elementum. Phasellus scelerisque ex odio, vel bibendum tellus ultricies et. Nam pulvinar ornare porta. Maecenas a bibendum neque, eget posuere dui. Vestibulum ut feugiat lectus. Nunc feugiat diam nulla, sagittis maximus tellus aliquam eget. Etiam lacus velit, maximus id odio in, luctus tristique nunc. Fusce quis malesuada sem. Integer iaculis iaculis libero id fermentum.</p>
+        
+        <h3 class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt odio at arcu sodales, a tincidunt neque elementum. Phasellus scelerisque ex odio, vel bibendum tellus ultricies et. Nam pulvinar ornare porta. Maecenas a bibendum neque, eget posuere dui. Vestibulum ut feugiat lectus. Nunc feugiat diam nulla, sagittis maximus tellus aliquam eget. Etiam lacus velit, maximus id odio in, luctus tristique nunc. Fusce quis malesuada sem. Integer iaculis iaculis libero id fermentum.</p>
+
+        <h3 class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt odio at arcu sodales, a tincidunt neque elementum. Phasellus scelerisque ex odio, vel bibendum tellus ultricies et. Nam pulvinar ornare porta. Maecenas a bibendum neque, eget posuere dui. Vestibulum ut feugiat lectus. Nunc feugiat diam nulla, sagittis maximus tellus aliquam eget. Etiam lacus velit, maximus id odio in, luctus tristique nunc. Fusce quis malesuada sem. Integer iaculis iaculis libero id fermentum.</p>
+
+        <h3 class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt odio at arcu sodales, a tincidunt neque elementum. Phasellus scelerisque ex odio, vel bibendum tellus ultricies et. Nam pulvinar ornare porta. Maecenas a bibendum neque, eget posuere dui. Vestibulum ut feugiat lectus. Nunc feugiat diam nulla, sagittis maximus tellus aliquam eget. Etiam lacus velit, maximus id odio in, luctus tristique nunc. Fusce quis malesuada sem. Integer iaculis iaculis libero id fermentum.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="bg-soft">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3 d-flex flex-column align-items-center text-center">
+          <h2 class="mb-3">Haben Sie Fragen?<br/>Wir helfen Ihnen gerne weiter</h2>
+          <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt odio at arcu sodales, a tincidunt neque elementum. </p>
+    
+          <a href="contact.html" class="fill-btn">Kontaktieren Sie uns</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="container">
+    <div class="row mb-5">
+      <div class="col-lg-3 mb-5 mb-xl-0">
+        <a href="/" class="d-block mb-3">
+          <img src="img/logo.svg" alt="Capitol Inkasso">
+        </a>
+
+        <p class="mb-2">Weichengereuth 26 96450 Coburg</p>
+        <p>0 95 61/80 60-0</p>
+      </div>
+
+      <div class="col-md-8 offset-lg-1 col-xl-7 offset-xl-2 col-xxl-6 offset-xxl-3 d-flex flex-column align-items-lg-end gap-5 justify-content-between">   
+        <ul class="nav flex-column flex-lg-row gap-3 gap-lg-4 justify-content-lg-end">
+          <li>
+            <a href="letter.html">Haben Sie einen Brief von uns erhalten?</a>
+          </li>
+
+          <li>
+            <a href="searching.html">Suchen Sie einen Inkasso-Partner?</a>
+          </li>
+
+          <li>
+            <a href="about-us.html">Über uns</a>
+          </li>
+
+          <li>
+            <a href="references.html">Verweise</a>
+          </li>
+
+          <li>
+            <a href="contact.html">kontaktiere uns</a>
+          </li>
+
+          <li>
+            <a href="#">Einloggen</a>
+          </li>
+        </ul>
+
+        <div class="social-links nav d-flex gap-4">
+          <a href="#" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="#" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          
+          <a href="#" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+
+          <a href="#" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+          <a href="#" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <span>© Urheberrecht. Alle Rechte vorbehalten</span>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/navbar-effects.js"></script>
+  <script src="js/simulate.js"></script>
+
+</body>
+
+</html>
