@@ -486,6 +486,12 @@ footer a:hover .fa-brands {
 		padding-top: 64px;
 		padding-bottom: 64px;
 	}
+
+	
+	/* Header */
+	header .fill-btn{
+		width: 300px;
+	}
 }
 
 @media (max-width: 575.98px) {
