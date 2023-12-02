@@ -1,0 +1,42 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+@font-face {
+	font-family: 'Umba Soft Alt Bold';
+	src: url('font/Umba-Soft-Alt-Bold.otf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* Geral */
+.drop-shadow-custom {
+  filter: drop-shadow(4px 8px 20px rgba(100, 100, 100, 0.20))
+          drop-shadow(16px 32px 36px rgba(100, 100, 100, 0.17))
+          drop-shadow(37px 72px 48px rgba(100, 100, 100, 0.10))
+          drop-shadow(65px 127px 57px rgba(100, 100, 100, 0.03))
+          drop-shadow(101px 199px 62px rgba(100, 100, 100, 0.00));
+}
+
+/* Whatsapp Flutuante */
+.floating-whats {
+	position: fixed;
+	width: 64px;
+	height: 64px;
+	bottom: 40px;
+	right: 40px;
+  color: #ffffff;
+	background-color: #25d366;
+	border-radius: 100%;
+	font-size: 30px;
+	box-shadow: 0px 8px 40px -8px rgba(44, 44, 44, 0.12);
+	z-index: 100;
+	transition: 300ms;
+}
+
+.floating-whats:hover {
+	background-color: #128c7e;
+}
+
+.floating-whats img {
+	width: 40px;
+}
